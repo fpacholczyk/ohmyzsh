@@ -23,6 +23,7 @@ alias kaf='kubectl apply -f'
 
 # Drop into an interactive terminal on a container
 alias keti='kubectl exec -t -i'
+alias keit=keti
 
 # Manage configuration quickly to switch contexts between local, dev ad staging.
 alias kcuc='kubectl config use-context'
@@ -55,7 +56,7 @@ alias kgpn='kgp -n'
 
 # Service management.
 alias kgs='kubectl get svc'
-alias kgsa='kubectl get svc --all-namespaces'
+alias kgsans='kubectl get svc --all-namespaces'
 alias kgsw='kgs --watch'
 alias kgswide='kgs -o wide'
 alias kes='kubectl edit svc'
@@ -157,6 +158,7 @@ alias kdpvc='kubectl describe pvc'
 alias kdelpvc='kubectl delete pvc'
 
 # Service account management.
+alias kgsa='kubectl get sa'
 alias kdsa="kubectl describe sa"
 alias kdelsa="kubectl delete sa"
 
